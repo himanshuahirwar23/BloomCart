@@ -1,20 +1,25 @@
-import { useState } from 'react'
-import './App.css'
-import Home from './Pages/Home'
-import { Nav } from './Navbar/Nav'
-import Page1 from './Pages/Page1'
+import React, { useRef } from 'react';
+import './App.css';
+import Home from './Pages/Home';
+import { Nav } from './Navbar/Nav';
+import Page1 from './Pages/Page1';
+
 function App() {
-  const [count, setCount] = useState(0)
+  const shopRef = useRef(null);
+
+  const scrollToShop = () => {
+    shopRef.current?.scrollIntoView({ behavior: 'smooth' });
+  };
 
   return (
-   
-      <>
-      <Nav></Nav>
-     <Home></Home>
-     <Page1></Page1>
-      </>
-    
-  )
+    <>
+      <Nav/>
+      <Home onShopClick={scrollToShop} />
+      <div ref={shopRef}>
+        <Page1 />
+      </div>
+    </>
+  );
 }
 
-export default App
+export default App;
