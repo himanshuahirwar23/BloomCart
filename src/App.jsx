@@ -3,6 +3,7 @@ import './App.css';
 import Home from './Pages/Home';
 import { Nav } from './Navbar/Nav';
 import Page1 from './Pages/Page1';
+import Footer from './Footer/Footer';
 
 function App() {
   const shopRef = useRef(null);
@@ -13,10 +14,11 @@ function App() {
 
   return (
     <>
-      <Nav/>
+      <Nav />
       <Home onShopClick={scrollToShop} />
       <div ref={shopRef}>
         <Page1 />
+        <Footer></Footer>
       </div>
     </>
   );
