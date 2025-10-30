@@ -2,7 +2,7 @@ import React from 'react';
 
 const Home = ({ onShopClick }) => {
   return (
-    <div className="relative bg-amber-200 h-[90vh] overflow-hidden">
+    <div className="relative  h-[90vh] overflow-hidden">
       <img
         src="https://images.unsplash.com/photo-1558769132-cb1aea458c5e?ixlib=rb-4.1.0&auto=format&fit=crop&q=80&w=1974"
         alt="Background"

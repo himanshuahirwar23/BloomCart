@@ -7,9 +7,13 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-10">
         {/* Brand Section */}
         <div>
-          <h1 className="text-l font-bold text-white mb-4">
-            <span className="text-[20px] mr-2">乃匚</span> ｂｌｏｏｍ X ｃａｒｔ
-          </h1>
+          {/* <h1 className=" font-bold text-white mb-4">
+            <span className=" mr-2">乃匚</span> ｂｌｏｏｍ X ｃａｒｔ
+          </h1> */}
+          <div className="text-[20px] mb-2">
+        <span className="text-[17px]  mr-2">乃匚</span>
+        ｂｌｏｏｍ X ｃａｒｔ
+      </div>
           <p className="text-sm text-gray-400 leading-6">
             Discover your own style with Bloom X Cart.  
             Unique pieces, sustainable fashion, and timeless beauty.
@@ -36,10 +40,11 @@ const Footer = () => {
         <div>
           <h3 className="text-lg font-semibold text-white mb-4">Shop</h3>
           <ul className="space-y-2 text-gray-400 text-sm">
-            <li><a href="#" className="hover:text-white transition">All Products</a></li>
-            <li><a href="#" className="hover:text-white transition">New Arrivals</a></li>
-            <li><a href="#" className="hover:text-white transition">Best Sellers</a></li>
-            <li><a href="#" className="hover:text-white transition">Sale</a></li>
+            <li>All Products</li>
+            <li>New Arrivals</li>
+            <li>Best Sellers</li>
+            <li>Sale</li>
+     
           </ul>
         </div>
 
@@ -47,10 +52,14 @@ const Footer = () => {
         <div>
           <h3 className="text-lg font-semibold text-white mb-4">Support</h3>
           <ul className="space-y-2 text-gray-400 text-sm">
-            <li><a href="#" className="hover:text-white transition">Contact Us</a></li>
+             <li>Contact Us</li>
+            <li>FAQs</li>
+            <li>Shipping & Returns</li>
+            <li>Privacy Policy</li>
+            {/* <li><a href="#" className="hover:text-white transition">Contact Us</a></li>
             <li><a href="#" className="hover:text-white transition">FAQs</a></li>
             <li><a href="#" className="hover:text-white transition">Shipping & Returns</a></li>
-            <li><a href="#" className="hover:text-white transition">Privacy Policy</a></li>
+            <li><a href="#" className="hover:text-white transition">Privacy Policy</a></li> */}
           </ul>
         </div>
 
